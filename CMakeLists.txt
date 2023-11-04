@@ -19,7 +19,9 @@ find_package(builtin_interfaces REQUIRED)
 
 set(srv_files
   "srv/Stringy.srv"
+  "srv/StringyArray.srv"
 )
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${srv_files}
   DEPENDENCIES std_msgs geometry_msgs action_msgs)
